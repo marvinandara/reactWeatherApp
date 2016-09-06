@@ -2,7 +2,13 @@ var React = require('react');
 
 var WeatherMessage = ({temp,location}) => {
 
-  var newLocation = location.charAt(0).toUpperCase() + location.slice(1);
+  var locationArr = location.split(" ");
+
+  for (var x = 0; x < locationArr.length; x++) {
+    locationArr[x] = locationArr[x].charAt(0).toUpperCase() + locationArr[x].slice(1);
+  }
+
+  var newLocation = locationArr.join(" ");
 
   return (
 
