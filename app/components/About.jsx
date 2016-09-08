@@ -20,7 +20,7 @@ var About = (props) => {
   return (
 
     <div>
-      <h1 className = "text-center">About</h1>
+      <h1 className = "text-center page-title">About</h1>
       <p>
         This weather application is built on <a href = "https://facebook.github.io/react/" target = "_blank">Reactjs</a>. It is part of a react course I am taking. Here is the link to the github repo <a href = "https://github.com/marvinandara/reactWeatherApp" target = "_blank">ReactWeatherApp</a>.
       </p>
