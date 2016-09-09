@@ -16,6 +16,11 @@ module.exports = {
         throw new Error(res.data.message);
       }
       else {
+        // var info = {
+        //   temp: res.data.main.temp,
+        //   weatherType: res.data.weather[0].id
+        // }
+        // console.log(info);
         return res.data.main.temp;
       }
 
